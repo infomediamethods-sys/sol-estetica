@@ -21,10 +21,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" media="(max-width: 899px)" imagesrcset="assets/img/heroi-mobile-480.webp 480w, assets/img/heroi-mobile-960.webp 960w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="preload" as="image" href="assets/img/heroi-mobile.webp" media="(max-width: 899px)" type="image/webp">
-<link rel="preload" as="image" href="assets/img/heroi-desktop.webp" media="(min-width: 900px)" type="image/webp">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,11 +84,10 @@
   <section class="heroi escuro" id="inicio" data-heroi>
     <div class="heroi__fundo">
       <picture>
-        <source media="(min-width: 900px)" srcset="assets/img/heroi-desktop.webp" type="image/webp">
-        <source media="(min-width: 900px)" srcset="assets/img/heroi-desktop.jpg">
-        <source srcset="assets/img/heroi-mobile.webp" type="image/webp">
-        <img src="assets/img/heroi-mobile.jpg" width="1200" height="1500" alt="Toalha branca dobrada, tigela de argila com pincel e ramos de eucalipto sobre linho" fetchpriority="high">
-      </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/heroi-mobile-480.webp 480w, assets/img/heroi-mobile-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/heroi-mobile-960.webp 960w" sizes="100vw">
+  <img src="assets/img/heroi-mobile-960.jpg" width="1200" height="1500" alt="Toalha branca dobrada, tigela de argila com pincel e ramos de eucalipto sobre linho" decoding="async" fetchpriority="high">
+</picture>
     </div>
     <div class="heroi__veu"></div>
     <div class="container heroi__conteudo">
@@ -177,9 +175,10 @@
       <div class="sobre__foto r">
         <div class="midia">
           <picture>
-            <source srcset="assets/img/sobre-sol.webp" type="image/webp">
-            <img src="assets/img/sobre-sol.jpg" width="882" height="1102" loading="lazy" alt="Sol, esteticista da Estética Sol, sorrindo, de blusa branca e óculos">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/sobre-sol-480.webp 480w, assets/img/sobre-sol-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/sobre-sol-960.webp 960w" sizes="50vw">
+  <img src="assets/img/sobre-sol-960.jpg" width="882" height="1102" alt="Sol, esteticista da Estética Sol, sorrindo, de blusa branca e óculos" decoding="async">
+</picture>
         </div>
       </div>
       <div class="sobre__texto r">
@@ -200,11 +199,10 @@
   <section class="frase escuro" aria-label="O seu momento de autocuidado">
     <div class="frase__fundo">
       <picture>
-        <source media="(min-width: 900px)" srcset="assets/img/frase-vapor-desktop.webp" type="image/webp">
-        <source media="(min-width: 900px)" srcset="assets/img/frase-vapor-desktop.jpg">
-        <source srcset="assets/img/frase-vapor-mobile.webp" type="image/webp">
-        <img src="assets/img/frase-vapor-mobile.jpg" width="1200" height="1500" loading="lazy" alt="Toalha quente enrolada numa bandeja, com vapor">
-      </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/frase-vapor-mobile-480.webp 480w, assets/img/frase-vapor-mobile-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/frase-vapor-mobile-960.webp 960w" sizes="50vw">
+  <img src="assets/img/frase-vapor-mobile-960.jpg" width="1200" height="1500" alt="Toalha quente enrolada numa bandeja, com vapor" decoding="async">
+</picture>
     </div>
     <div class="frase__veu"></div>
     <div class="container frase__texto">
@@ -226,9 +224,10 @@
         <li class="cuidado" data-cuidado><div class="cuidado__entra r">
           <div class="cuidado__midia">
             <picture>
-            <source srcset="assets/img/cuidado-massagem.webp" type="image/webp">
-            <img src="assets/img/cuidado-massagem.jpg" width="1200" height="900" loading="lazy" alt="Mãos espalhando óleo antes de uma massagem">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/cuidado-massagem-480.webp 480w, assets/img/cuidado-massagem-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/cuidado-massagem-960.webp 960w" sizes="50vw">
+  <img src="assets/img/cuidado-massagem-960.jpg" width="1200" height="900" alt="Mãos espalhando óleo antes de uma massagem" decoding="async" loading="lazy">
+</picture>
           </div>
           <div class="cuidado__corpo-card">
             <span class="cuidado__etiqueta">Rosto</span>
@@ -243,9 +242,10 @@
         <li class="cuidado cuidado--destaque escuro" data-cuidado><div class="cuidado__entra r">
           <div class="cuidado__midia">
             <picture>
-            <source srcset="assets/img/cuidado-limpeza.webp" type="image/webp">
-            <img src="assets/img/cuidado-limpeza.jpg" width="1200" height="900" loading="lazy" alt="Discos de algodão, pote de creme e espátula numa bandeja">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/cuidado-limpeza-480.webp 480w, assets/img/cuidado-limpeza-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/cuidado-limpeza-960.webp 960w" sizes="50vw">
+  <img src="assets/img/cuidado-limpeza-960.jpg" width="1200" height="900" alt="Discos de algodão, pote de creme e espátula numa bandeja" decoding="async" loading="lazy">
+</picture>
           </div>
           <div class="cuidado__corpo-card">
             <span class="cuidado__etiqueta">Rosto</span>
@@ -260,9 +260,10 @@
         <li class="cuidado" data-cuidado><div class="cuidado__entra r">
           <div class="cuidado__midia">
             <picture>
-            <source srcset="assets/img/cuidado-drenagem.webp" type="image/webp">
-            <img src="assets/img/cuidado-drenagem.jpg" width="1200" height="900" loading="lazy" alt="Maca vazia com toalha enrolada na cabeceira">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/cuidado-drenagem-480.webp 480w, assets/img/cuidado-drenagem-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/cuidado-drenagem-960.webp 960w" sizes="50vw">
+  <img src="assets/img/cuidado-drenagem-960.jpg" width="1200" height="900" alt="Maca vazia com toalha enrolada na cabeceira" decoding="async" loading="lazy">
+</picture>
           </div>
           <div class="cuidado__corpo-card">
             <span class="cuidado__etiqueta">Corpo</span>
@@ -279,9 +280,10 @@
         <div class="banda__foto">
           <div class="midia">
             <picture>
-            <source srcset="assets/img/primeira-vez-sol.webp" type="image/webp">
-            <img src="assets/img/primeira-vez-sol.jpg" width="462" height="578" loading="lazy" alt="Sol, esteticista, sorrindo">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/primeira-vez-sol-480.webp 480w, assets/img/primeira-vez-sol-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/primeira-vez-sol-960.webp 960w" sizes="50vw">
+  <img src="assets/img/primeira-vez-sol-960.jpg" width="462" height="578" alt="Sol, esteticista, sorrindo" decoding="async" loading="lazy">
+</picture>
           </div>
         </div>
         <div class="banda__texto">
@@ -340,9 +342,10 @@
         <div class="convite__foto">
           <div class="midia">
             <picture>
-            <source srcset="assets/img/convite-sala.webp" type="image/webp">
-            <img src="assets/img/convite-sala.jpg" width="1200" height="1500" loading="lazy" alt="Sol na porta da sala de atendimento da Estética Sol, com a maca de lençol lilás">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/convite-sala-480.webp 480w, assets/img/convite-sala-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/convite-sala-960.webp 960w" sizes="50vw">
+  <img src="assets/img/convite-sala-960.jpg" width="1200" height="1500" alt="Sol na porta da sala de atendimento da Estética Sol, com a maca de lençol lilás" decoding="async" loading="lazy">
+</picture>
           </div>
         </div>
       </div>
@@ -386,9 +389,10 @@
         <div class="contato__foto">
           <div class="midia">
             <picture>
-            <source srcset="assets/img/contato-espaco.webp" type="image/webp">
-            <img src="assets/img/contato-espaco.jpg" width="478" height="597" loading="lazy" alt="Nicho em arco iluminado no espaço da Estética Sol">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/contato-espaco-480.webp 480w, assets/img/contato-espaco-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/contato-espaco-960.webp 960w" sizes="50vw">
+  <img src="assets/img/contato-espaco-960.jpg" width="478" height="597" alt="Nicho em arco iluminado no espaço da Estética Sol" decoding="async" loading="lazy">
+</picture>
           </div>
         </div>
         <div class="contato__texto">
